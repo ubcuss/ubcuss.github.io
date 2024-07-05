@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UBC Undergraduate Statistics Society</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .b-example-divider {
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
+
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
+
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Undergraduate Statistics Society</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html#about">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Events
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="upcomingevents.html">Upcoming Events</a></li>
+                                <li><a class="dropdown-item" href="index.html#pastevents">Past Events</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html#team">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container marketing">
+            <h1 style="text-align: center; font-size: 3rem; padding-top: 5%;">Our Upcoming Events</h1>
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">Poker <span class="text-muted">Night</span></h2>
+                    <h2><span class="text-muted">March 9th, 2023</span></h2>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean bibendum consectetur
+                        justo, et facilisis lectus
+                        tristique in. Praesent semper lacus magna, in porta eros finibus non. Integer mollis felis nisl,
+                        vitae cursus metus
+                        viverra vitae. Phasellus quis elementum leo. Cras in rutrum arcu. Vestibulum in consequat elit,
+                        sit amet rutrum lectus. tristique vehicula. Curabitur gravida velit a maximus dignissim. Duis
+                        sed tortor ac orci scelerisque aliquam vel nec
+                        augue. Ut id lorem tempor, pulvinar leo ut, finibus nulla. Morbi ac urna et ipsum laoreet
+                        imperdiet.
+                    </p>
+                    <button class="btn btn-primary btn-lg"> Register </button>
+                </div>
+
+                <div class="col-md-5">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                        height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder:500x500"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <image href="images/events1.png" height="500" width="500" />
+                    </svg>
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading fw-normal lh-1">DSCI QUIZ 2 <span class="text-muted">REVIEW
+                            WORKSHOP</span></h2>
+                    <h2><span class="text-muted">March 20th, 2023</span></h2>
+                    <p class="lead">Our largest event of the year was the “USS 2022 Career Night” hosted on April 4th,
+                        2022. We
+                        invited panelists from various industrial and research fields to share their careers, introduce
+                        their companies and work opportunities, and provide pieces of advice to students who intend
+                        to pursue careers in statistics, data science, and computer science in the future. Some of our
+                        panelists included: Beatrice Baribeau, the Assistant Director in the Statistical Integration
+                        Division of Statistics Canada; Ryan Molden, the Software Development Engineer from
+                        Microsoft; Professor Paul Gustafson from the UBC Statistics Department. Students and
+                        panelists who attended our Career Night had the opportunity to physically meet and
+                        communicate with each other.
+                    </p>
+                    <button class="btn btn-primary btn-lg"> Register </button>
+
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                        height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <image href="images/events1.png" height="500" width="500" />
+                    </svg>
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">Career<span class="text-muted"> Night</span></h2>
+                    <h2><span class="text-muted">April 2nd, 2023</span></h2>
+                    <p class="lead">On October 29th, 2021, we hosted our event “Halloween Game Night” in which students
+                        had
+                        the opportunity to come dressed up in costumes and enjoyed an unforgettable night with our
+                        various activities. Pumpkin painting was one of our most popular activities. Pumpkins, paints,
+                        and brushes were provided, and students demonstrated their amazing artistic talent through
+                        pumpkin painting. Also, fun board games are a must to get everyone involved, communicate,
+                        and socialize. Finally, a well-decorated photo booth station was provided so that students
+                        preserved joyful memories with their friends and peers. Our “Halloween Game Night”
+                        attracted 70 students to engage and experienced a joyful and memorable Halloween.
+                    </p>
+                    <button class="btn btn-primary btn-lg"> Register </button>
+                </div>
+                <div class="col-md-5">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                        height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <image href="images/halloween.png" height="500" width="500" />
+                    </svg>
+
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -3,34 +3,33 @@
 /* Padding below the footer and lighter body text */
 
 body {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    color: #5a5a5a;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
 }
-
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
 /* Carousel base class */
 .carousel {
-    margin-bottom: 4rem;
+  margin-bottom: 4rem;
 }
 
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
-    bottom: 3rem;
-    z-index: 10;
+  bottom: 3rem;
+  z-index: 10;
 }
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-    height: 32rem;
+  height: 32rem;
 }
 @media (max-width: 768px) {
-    .carousel-item {
-            height: 16rem;
-        }
+  .carousel-item {
+    height: 16rem;
+  }
 }
 
 /* MARKETING CONTENT
@@ -38,31 +37,30 @@ body {
 
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
-    margin-bottom: 1.5rem;
-    text-align: center;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 /* rtl:begin:ignore */
 .marketing .col-lg-4 p {
-    margin-right: .75rem;
-    margin-left: .75rem;
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
 }
 
 /* rtl:end:ignore */
-
 
 /* Featurettes
 ------------------------- */
 
 .featurette-divider {
-    margin: 5rem 0;
-    /* Space out the Bootstrap <hr> more */
+  margin: 5rem 0;
+  /* Space out the Bootstrap <hr> more */
 }
 
 /* Thin out the marketing headings */
 /* rtl:begin:remove */
 .featurette-heading {
-    letter-spacing: -.05rem;
+  letter-spacing: -0.05rem;
 }
 
 /* rtl:end:remove */
@@ -71,41 +69,29 @@ body {
 -------------------------------------------------- */
 
 @media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
 
-    /* Bump up size of carousel content */
-    .carousel-caption p {
-        margin-bottom: 1.25rem;
-        font-size: 1.25rem;
-        line-height: 1.4;
-    }
-
-    .featurette-heading {
-        font-size: 50px;
-    }
+  .featurette-heading {
+    font-size: 50px;
+  }
 }
 
 @media (min-width: 62em) {
-    .featurette-heading {
-        margin-top: 7rem;
-    }
+  .featurette-heading {
+    margin-top: 7rem;
+  }
 }
 
-.about{
-    padding: 2% 15% 5% 15%;
+.about {
+  padding: 2% 15% 5% 15%;
 }
-
-
-
-
-
-
-
-
-
-
 
 /*###################################*/
-
 
 /**********************************/
 /********** General CSS ***********/
@@ -113,1474 +99,1465 @@ body {
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 a {
-    color: #333333;
-    font-weight: 400;
-    outline: none;
-    text-decoration: none;
-    transition: 0.5s;
+  color: #333333;
+  font-weight: 400;
+  outline: none;
+  text-decoration: none;
+  transition: 0.5s;
 }
 
 a:hover,
 a:active,
 a:focus {
-    outline: none;
-    text-decoration: none;
+  outline: none;
+  text-decoration: none;
 }
-
 
 img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
-
-
 
 /**********************************/
 /***** Layout & Section Title *****/
 /**********************************/
 .container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media (min-width: 576px) {
-    .container {
-        max-width: 540px;
-    }
+  .container {
+    max-width: 540px;
+  }
 }
 
 @media (min-width: 768px) {
-    .container {
-        max-width: 720px;
-    }
+  .container {
+    max-width: 720px;
+  }
 }
 
 @media (min-width: 992px) {
-    .container {
-        max-width: 960px;
-    }
+  .container {
+    max-width: 960px;
+  }
 }
 
 @media (min-width: 1200px) {
-    .container {
-        max-width: 1140px;
-    }
+  .container {
+    max-width: 1140px;
+  }
 }
 
 .row {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
 }
 
 .column {
-    position: relative;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 100%;
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
 }
 
 @media (min-width: 576px) {
-    .column {
-        -ms-flex: 0 0 50%;
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
+  .column {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
 }
 
 @media (min-width: 768px) {
-    .column {
-        -ms-flex: 0 0 33.333333%;
-        flex: 0 0 33.333333%;
-        max-width: 33.333333%;
-    }
+  .column {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
 }
 
 @media (min-width: 992px) {
-    .column {
-        -ms-flex: 0 0 25%;
-        flex: 0 0 25%;
-        max-width: 25%;
-    }
+  .column {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
 }
 
 .section-title {
-    width: 100%;
-    text-align: center;
-    padding: 45px 0 30px 0;
+  width: 100%;
+  text-align: center;
+  padding: 45px 0 30px 0;
 }
 
 .section-title::after {
-    position: absolute;
-    content: "";
-    width: 50px;
-    height: 5px;
-    left: calc(50% - 25px);
-    background: #353535;
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 5px;
+  left: calc(50% - 25px);
+  background: #353535;
 }
 
 .section-title h1 {
-    color: #353535;
-    font-size: 50px;
-    letter-spacing: 5px;
-    margin-bottom: 5px;
+  color: #353535;
+  font-size: 50px;
+  letter-spacing: 5px;
+  margin-bottom: 5px;
 }
 
-@media(max-width: 767.98px) {
-    .section-title h1 {
-        font-size: 40px;
-        letter-spacing: 3px;
-    }
+@media (max-width: 767.98px) {
+  .section-title h1 {
+    font-size: 40px;
+    letter-spacing: 3px;
+  }
 }
 
-@media(max-width: 567.98px) {
-    .section-title h1 {
-        font-size: 30px;
-        letter-spacing: 2px;
-    }
+@media (max-width: 567.98px) {
+  .section-title h1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+  }
 }
-
-
 
 /**********************************/
 /********** Team #1 Style *********/
 /**********************************/
 .team-1 {
-    margin-bottom: 30px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .team-1 .team-img {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .team-1 .team-img img {
-    width: 100%;
-    height: auto;
-    transition: all .3s;
+  width: 100%;
+  height: auto;
+  transition: all 0.3s;
 }
 
 .team-1:hover .team-img img {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .team-1 .team-content {
-    padding: 20px;
+  padding: 20px;
 }
 
 .team-1 .team-content h2 {
-    font-size: 25px;
-    font-weight: 400;
-    letter-spacing: 2px;
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 2px;
 }
 
 .team-1 .team-content h3 {
-    font-size: 16px;
-    font-weight: 300;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 .team-1 .team-content h4 {
-    font-size: 16px;
-    font-weight: 300;
-    font-style: italic;
-    letter-spacing: 1px;
-    margin-bottom: 25px;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
 }
 
 .team-1 .team-content p {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 22px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
 }
 
 .team-1 .team-social {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    font-size: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 0;
 }
 
 .team-1 .team-social a {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    margin-right: 5px;
-    padding: 11px 0 10px 0;
-    font-size: 16px;
-    line-height: 16px;
-    text-align: center;
-    color: #ffffff;
-    transition: all .3s;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  padding: 11px 0 10px 0;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+  transition: all 0.3s;
 }
 
 .team-1 .team-social a.social-tw {
-    background: #00acee;
+  background: #00acee;
 }
 
 .team-1 .team-social a.social-fb {
-    background: #3b5998;
+  background: #3b5998;
 }
 
 .team-1 .team-social a.social-li {
-    background: #0e76a8;
+  background: #0e76a8;
 }
 
 .team-1 .team-social a.social-in {
-    background: #3f729b;
+  background: #3f729b;
 }
 
 .team-1 .team-social a.social-yt {
-    background: #c4302b;
+  background: #c4302b;
 }
 
 .team-1 .team-social a:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .team-1 .team-social a:hover {
-    background: #222222;
+  background: #222222;
 }
-
-
 
 /**********************************/
 /********** Team #2 Style *********/
 /**********************************/
 .team-2 {
-    text-align: center;
-    margin-bottom: 30px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .team-2 .team-img {
-    position: relative;
-    font-size: 0;
-    border-radius: 5px 5px 0 0;
+  position: relative;
+  font-size: 0;
+  border-radius: 5px 5px 0 0;
 }
 
 .team-2 .team-img img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px 5px 0 0;
+  width: 100%;
+  height: auto;
+  border-radius: 5px 5px 0 0;
 }
 
 .team-2 .team-social {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(255, 255, 255, .5);
-    transition: all .3s;
-    font-size: 0;
-    z-index: 1;
-    opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.5);
+  transition: all 0.3s;
+  font-size: 0;
+  z-index: 1;
+  opacity: 0;
 }
 
 .team-2:hover .team-social {
-    opacity: 1;
+  opacity: 1;
 }
 
 .team-2 .team-social a {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    margin-right: 5px;
-    padding: 11px 0 10px 0;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 16px;
-    text-align: center;
-    color: #ffffff;
-    border-radius: 5px;
-    transition: all .3s;
-    margin-top: 50px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  padding: 11px 0 10px 0;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 5px;
+  transition: all 0.3s;
+  margin-top: 50px;
 }
 
 .team-2 .team-social a.social-tw {
-    background: #00acee;
+  background: #00acee;
 }
 
 .team-2 .team-social a.social-fb {
-    background: #3b5998;
+  background: #3b5998;
 }
 
 .team-2 .team-social a.social-li {
-    background: #0e76a8;
+  background: #0e76a8;
 }
 
 .team-2 .team-social a.social-in {
-    background: #3f729b;
+  background: #3f729b;
 }
 
 .team-2 .team-social a.social-yt {
-    background: #c4302b;
+  background: #c4302b;
 }
 
 .team-2 .team-social a:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .team-2:hover .team-social a {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .team-2 .team-social a:hover {
-    color: #222222;
-    background: #ffffff;
+  color: #222222;
+  background: #ffffff;
 }
 
 .team-2 .team-content {
-    padding: 20px;
+  padding: 20px;
 }
 
 .team-2 .team-content h2 {
-    font-size: 25px;
-    font-weight: 400;
-    letter-spacing: 2px;
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 2px;
 }
 
 .team-2 .team-content h3 {
-    font-size: 16px;
-    font-weight: 300;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 .team-2 .team-content h4 {
-    font-size: 16px;
-    font-weight: 300;
-    font-style: italic;
-    letter-spacing: 1px;
-    margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 1px;
+  margin-bottom: 0;
 }
 
 .team-2 .team-content p {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 22px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
 }
-
-
 
 /**********************************/
 /********* Team #3 Style **********/
 /**********************************/
 .team-3 {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .team-3 .team-img {
-    position: relative;
-    font-size: 0;
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  position: relative;
+  font-size: 0;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  -webkit-clip-path: polygon(
+    50% 0%,
+    100% 25%,
+    100% 75%,
+    50% 100%,
+    0% 75%,
+    0% 25%
+  );
 }
 
 .team-3 .team-img img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .team-3 .team-social {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(255, 255, 255, .5);
-    transition: all .3s;
-    font-size: 0;
-    z-index: 1;
-    opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.5);
+  transition: all 0.3s;
+  font-size: 0;
+  z-index: 1;
+  opacity: 0;
 }
 
 .team-3:hover .team-social {
-    opacity: 1;
+  opacity: 1;
 }
 
 .team-3 .team-social a {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    margin-right: 5px;
-    padding: 11px 0 10px 0;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 16px;
-    text-align: center;
-    color: #ffffff;
-    transition: all .3s;
-    margin-top: 50px;
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  padding: 11px 0 10px 0;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+  transition: all 0.3s;
+  margin-top: 50px;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  -webkit-clip-path: polygon(
+    50% 0%,
+    100% 25%,
+    100% 75%,
+    50% 100%,
+    0% 75%,
+    0% 25%
+  );
 }
 
 .team-3 .team-social a.social-tw {
-    background: #00acee;
+  background: #00acee;
 }
 
 .team-3 .team-social a.social-fb {
-    background: #3b5998;
+  background: #3b5998;
 }
 
 .team-3 .team-social a.social-li {
-    background: #0e76a8;
+  background: #0e76a8;
 }
 
 .team-3 .team-social a.social-in {
-    background: #3f729b;
+  background: #3f729b;
 }
 
 .team-3 .team-social a.social-yt {
-    background: #c4302b;
+  background: #c4302b;
 }
 
 .team-3 .team-social a:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .team-3:hover .team-social a {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .team-3 .team-social a:hover {
-    color: #222222;
-    background: #ffffff;
+  color: #222222;
+  background: #ffffff;
 }
 
 .team-3 .team-content {
-    padding: 70px 20px 20px 20px;
-    margin-top: -50px;
-    text-align: center;
-    background: #f3f4fa;
-    transition: all .5s;
+  padding: 70px 20px 20px 20px;
+  margin-top: -50px;
+  text-align: center;
+  background: #f3f4fa;
+  transition: all 0.5s;
 }
 
 .team-3:hover .team-content {
-    background: #222222;
+  background: #222222;
 }
 
 .team-3:hover .team-content h2,
 .team-3:hover .team-content h3,
 .team-3:hover .team-content h4,
 .team-3:hover .team-content p {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .team-3 .team-content h2 {
-    font-size: 25px;
-    font-weight: 400;
-    letter-spacing: 2px;
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 2px;
 }
 
 .team-3 .team-content h3 {
-    font-size: 16px;
-    font-weight: 300;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 .team-3 .team-content h4 {
-    font-size: 16px;
-    font-weight: 300;
-    font-style: italic;
-    letter-spacing: 1px;
-    margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 1px;
+  margin-bottom: 0;
 }
 
 .team-3 .team-content p {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 22px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
 }
-
-
 
 /**********************************/
 /********* Team #4 Style **********/
 /**********************************/
 .team-4 {
-    margin-bottom: 30px;
-    background: #ffffff;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+  background: #ffffff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
 }
 
 .team-4:hover {
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
 }
 
 .team-4 .team-img {
-    position: relative;
-    font-size: 0;
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-    transition: all .3s;
+  position: relative;
+  font-size: 0;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  transition: all 0.3s;
 }
 
 .team-4:hover .team-img {
-    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
-    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
 }
 
 .team-4 .team-img img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .team-4 .team-img .team-content {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(0, 0, 0, .5);
-    transition: all .6s;
-    z-index: 1;
-    opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 0.6s;
+  z-index: 1;
+  opacity: 0;
 }
 
 .team-4 .team-img .team-content p {
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 22px;
-    margin: 0;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+  margin: 0;
 }
 
 .team-4:hover .team-img .team-content {
-    opacity: 1;
+  opacity: 1;
 }
 
 .team-4 .team-content {
-    padding: 20px;
-    text-align: center;
+  padding: 20px;
+  text-align: center;
 }
 
 .team-4 .team-content h2 {
-    font-size: 25px;
-    font-weight: 400;
-    letter-spacing: 2px;
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 2px;
 }
 
 .team-4 .team-content h3 {
-    font-size: 16px;
-    font-weight: 300;
-    margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 0;
 }
 
 .team-4 .team-social {
-    font-size: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  font-size: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .team-4 .team-social a {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    margin-right: 5px;
-    padding: 11px 0 10px 0;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 16px;
-    text-align: center;
-    color: #ffffff;
-    transition: all .3s;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  padding: 11px 0 10px 0;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+  transition: all 0.3s;
 }
 
 .team-4 .team-social a.social-tw {
-    background: #00acee;
+  background: #00acee;
 }
 
 .team-4 .team-social a.social-fb {
-    background: #3b5998;
+  background: #3b5998;
 }
 
 .team-4 .team-social a.social-li {
-    background: #0e76a8;
+  background: #0e76a8;
 }
 
 .team-4 .team-social a.social-in {
-    background: #3f729b;
+  background: #3f729b;
 }
 
 .team-4 .team-social a.social-yt {
-    background: #c4302b;
+  background: #c4302b;
 }
 
 .team-4 .team-social a:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .team-4 .team-social a:hover {
-    color: #ffffff;
-    background: #222222;
+  color: #ffffff;
+  background: #222222;
 }
-
-
 
 /**********************************/
 /********* Team #5 Style **********/
 /**********************************/
 .team-5 {
-    margin-bottom: 30px;
-    box-shadow: #222222;
-    opacity: 1;
+  margin-bottom: 30px;
+  box-shadow: #222222;
+  opacity: 1;
 }
 
 .team-5 .team-img {
-    position: relative;
-    font-size: 0;
-    text-align: center;
+  position: relative;
+  font-size: 0;
+  text-align: center;
 }
 
 .team-5 .team-img img {
-    width: 160px;
-    height: auto;
-    border-radius: 100%;
-    border: 20px solid #f3f4fa;
+  width: 160px;
+  height: auto;
+  border-radius: 100%;
+  border: 20px solid #f3f4fa;
 }
 
 .team-5 .team-content {
-    padding: 80px 20px 20px 20px;
-    margin-top: -80px;
-    text-align: center;
-    background: #f3f4fa;
-    border-radius: 10px;
+  padding: 80px 20px 20px 20px;
+  margin-top: -80px;
+  text-align: center;
+  background: #f3f4fa;
+  border-radius: 10px;
 }
 
 .team-5 .team-content h2 {
-    font-size: 25px;
-    font-weight: 400;
-    letter-spacing: 2px;
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 2px;
 }
 
 .team-5 .team-content h3 {
-    font-size: 16px;
-    font-weight: 300;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 .team-5 .team-content h4 {
-    font-size: 16px;
-    font-weight: 300;
-    font-style: italic;
-    letter-spacing: 1px;
-    margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 1px;
+  margin-bottom: 0;
 }
 
 .team-5 .team-content p {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 22px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
 }
 
 .team-5 .team-social {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    padding: 35px;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(255, 255, 255, .6);
-    transition: all .3s;
-    font-size: 0;
-    z-index: 1;
-    opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 35px;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.6);
+  transition: all 0.3s;
+  font-size: 0;
+  z-index: 1;
+  opacity: 0;
 }
 
 .team-5:hover .team-social {
-    opacity: 1;
+  opacity: 1;
 }
 
 .team-5 .team-social a {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    margin-right: 5px;
-    padding: 11px 0 10px 0;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 16px;
-    text-align: center;
-    color: #ffffff;
-    border-radius: 10px;
-    transition: all .3s;
-    margin-top: 50px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  padding: 11px 0 10px 0;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 10px;
+  transition: all 0.3s;
+  margin-top: 50px;
 }
 
 .team-5 .team-social a.social-tw {
-    background: #00acee;
+  background: #00acee;
 }
 
 .team-5 .team-social a.social-fb {
-    background: #3b5998;
+  background: #3b5998;
 }
 
 .team-5 .team-social a.social-li {
-    background: #0e76a8;
+  background: #0e76a8;
 }
 
 .team-5 .team-social a.social-in {
-    background: #3f729b;
+  background: #3f729b;
 }
 
 .team-5 .team-social a.social-yt {
-    background: #c4302b;
+  background: #c4302b;
 }
 
 .team-5 .team-social a:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .team-5:hover .team-social a {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .team-5 .team-social a:hover {
-    background: #222222;
+  background: #222222;
 }
-
-
 
 /**********************************/
 /********* Team #6 Style **********/
 /**********************************/
 .team-6 {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .team-6 .team-img {
-    position: relative;
-    font-size: 0;
-    text-align: center;
-    border-radius: 100%;
-    margin-bottom: 30px;
-    overflow: hidden;
+  position: relative;
+  font-size: 0;
+  text-align: center;
+  border-radius: 100%;
+  margin-bottom: 30px;
+  overflow: hidden;
 }
 
 .team-6 .team-img img {
-    width: 100%;
-    height: auto;
-    border-radius: 100%;
-    border: 15px solid #f3f4fa;
-    transition: all .3s;
+  width: 100%;
+  height: auto;
+  border-radius: 100%;
+  border: 15px solid #f3f4fa;
+  transition: all 0.3s;
 }
 
 .team-6:hover .team-img img {
-    border: 0px solid #f3f4fa;
+  border: 0px solid #f3f4fa;
 }
 
 .team-6 .team-content {
-    text-align: center;
+  text-align: center;
 }
 
 .team-6 .team-content h2 {
-    font-size: 25px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    margin-bottom: 5px;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
 }
 
 .team-6 .team-content h3 {
-    font-size: 16px;
-    font-weight: 300;
-    margin-bottom: 30px;
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 30px;
 }
 
 .team-6 .team-social {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0;
 }
 
 .team-6 .team-social a {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    margin-right: 5px;
-    padding: 12px 0 10px 0;
-    font-size: 16px;
-    line-height: 16px;
-    text-align: center;
-    color: #ffffff;
-    border-radius: 100%;
-    transition: all .3s;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  padding: 12px 0 10px 0;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 100%;
+  transition: all 0.3s;
 }
 
 .team-6 .team-social a.social-tw {
-    background: #00acee;
+  background: #00acee;
 }
 
 .team-6 .team-social a.social-fb {
-    background: #3b5998;
+  background: #3b5998;
 }
 
 .team-6 .team-social a.social-li {
-    background: #0e76a8;
+  background: #0e76a8;
 }
 
 .team-6 .team-social a.social-in {
-    background: #3f729b;
+  background: #3f729b;
 }
 
 .team-6 .team-social a.social-yt {
-    background: #c4302b;
+  background: #c4302b;
 }
 
 .team-6 .team-social a:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .team-6 .team-social a:hover {
-    background: #222222;
+  background: #222222;
 }
-
-
 
 /**********************************/
 /********* Team #7 Style **********/
 /**********************************/
 .team-7 {
-    margin-bottom: 30px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .team-7 .team-img {
-    position: relative;
-    font-size: 0;
+  position: relative;
+  font-size: 0;
 }
 
 .team-7 .team-img img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .team-7 .team-social {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(255, 255, 255, .5);
-    transition: all .3s;
-    font-size: 0;
-    z-index: 1;
-    opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.5);
+  transition: all 0.3s;
+  font-size: 0;
+  z-index: 1;
+  opacity: 0;
 }
 
 .team-7:hover .team-social {
-    opacity: 1;
+  opacity: 1;
 }
 
 .team-7 .team-social a {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    margin-right: 5px;
-    padding: 11px 0 10px 0;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 16px;
-    text-align: center;
-    color: #ffffff;
-    transition: all .3s;
-    margin-top: 50px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  padding: 11px 0 10px 0;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+  transition: all 0.3s;
+  margin-top: 50px;
 }
 
 .team-7 .team-social a.social-tw {
-    background: #00acee;
+  background: #00acee;
 }
 
 .team-7 .team-social a.social-fb {
-    background: #3b5998;
+  background: #3b5998;
 }
 
 .team-7 .team-social a.social-li {
-    background: #0e76a8;
+  background: #0e76a8;
 }
 
 .team-7 .team-social a.social-in {
-    background: #3f729b;
+  background: #3f729b;
 }
 
 .team-7 .team-social a.social-yt {
-    background: #c4302b;
+  background: #c4302b;
 }
 
 .team-7 .team-social a:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .team-7:hover .team-social a {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .team-7 .team-social a:hover {
-    color: #222222;
-    background: #ffffff;
+  color: #222222;
+  background: #ffffff;
 }
 
 .team-7 .team-content {
-    padding: 20px;
+  padding: 20px;
 }
 
 .team-7 .team-content h2 {
-    font-size: 25px;
-    font-weight: 400;
-    letter-spacing: 2px;
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 2px;
 }
 
 .team-7 .team-content h3 {
-    font-size: 16px;
-    font-weight: 300;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 .team-7 .team-content p {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 22px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
 }
 
 .team-7 .skill-name {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .team-7 .skill-name p {
-    display: inline-block;
-    font-size: 16px;
-    font-weight: 400;
-    margin: 0;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
 }
 
 .team-7 .skill-name p:last-child {
-    float: right;
+  float: right;
 }
 
 .team-7 .progress {
-    position: relative;
-    width: 100%;
-    height: 15px;
-    margin-bottom: 15px;
-    background: #dddddd;
+  position: relative;
+  width: 100%;
+  height: 15px;
+  margin-bottom: 15px;
+  background: #dddddd;
 }
 
 .team-7 .progress:last-child {
-    margin: 0;
+  margin: 0;
 }
 
 .team-7 .progress-bar {
-    position: absolute;
-    width: 0%;
-    height: 15px;
-    top: 0;
-    left: 0;
-    background: #454545;
-    transition: all .5s;
-    z-index: 1;
+  position: absolute;
+  width: 0%;
+  height: 15px;
+  top: 0;
+  left: 0;
+  background: #454545;
+  transition: all 0.5s;
+  z-index: 1;
 }
 
 .team-7:hover .progress-bar.w-70 {
-    width: 70%;
+  width: 70%;
 }
 
 .team-7:hover .progress-bar.w-75 {
-    width: 75%;
+  width: 75%;
 }
 
 .team-7:hover .progress-bar.w-80 {
-    width: 80%;
+  width: 80%;
 }
 
 .team-7:hover .progress-bar.w-85 {
-    width: 85%;
+  width: 85%;
 }
 
 .team-7:hover .progress-bar.w-90 {
-    width: 90%;
+  width: 90%;
 }
 
 .team-7:hover .progress-bar.w-95 {
-    width: 95%;
+  width: 95%;
 }
 
 .team-7:hover .progress-bar.w-100 {
-    width: 100%;
+  width: 100%;
 }
-
-
 
 /**********************************/
 /********* Team #8 Style **********/
 /**********************************/
 .team-8 {
-    margin-bottom: 30px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .team-8 .team-img {
-    position: relative;
-    font-size: 0;
+  position: relative;
+  font-size: 0;
 }
 
 .team-8 .team-img img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .team-8 .team-img .team-content {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(0, 0, 0, .5);
-    transition: all .6s;
-    z-index: 1;
-    opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 0.6s;
+  z-index: 1;
+  opacity: 0;
 }
 
 .team-8 .team-img .team-content p {
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 22px;
-    text-align: center;
-    margin: 0;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+  text-align: center;
+  margin: 0;
 }
 
 .team-8:hover .team-img .team-content {
-    opacity: 1;
+  opacity: 1;
 }
 
 .team-8 .team-content {
-    padding: 20px;
+  padding: 20px;
 }
 
 .team-8 .team-content h2 {
-    font-size: 25px;
-    font-weight: 400;
-    letter-spacing: 2px;
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 2px;
 }
 
 .team-8 .team-content h3 {
-    font-size: 16px;
-    font-weight: 400;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .team-8 .team-content p {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 22px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
 }
 
 .team-8 .team-skill {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .team-8 .skill-name {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .team-8 .skill-name p {
-    display: inline-block;
-    font-size: 16px;
-    font-weight: 400;
-    margin: 0;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
 }
 
 .team-8 .skill-name p:last-child {
-    float: right;
+  float: right;
 }
 
 .team-8 .progress {
-    position: relative;
-    width: 100%;
-    height: 15px;
-    margin-bottom: 15px;
-    background: #dddddd;
+  position: relative;
+  width: 100%;
+  height: 15px;
+  margin-bottom: 15px;
+  background: #dddddd;
 }
 
 .team-8 .progress:last-child {
-    margin: 0;
+  margin: 0;
 }
 
 .team-8 .progress-bar {
-    position: absolute;
-    width: 0%;
-    height: 15px;
-    top: 0;
-    left: 0;
-    background: #454545;
-    transition: all .5s;
-    z-index: 1;
+  position: absolute;
+  width: 0%;
+  height: 15px;
+  top: 0;
+  left: 0;
+  background: #454545;
+  transition: all 0.5s;
+  z-index: 1;
 }
 
 .team-8:hover .progress-bar.w-70 {
-    width: 70%;
+  width: 70%;
 }
 
 .team-8:hover .progress-bar.w-75 {
-    width: 75%;
+  width: 75%;
 }
 
 .team-8:hover .progress-bar.w-80 {
-    width: 80%;
+  width: 80%;
 }
 
 .team-8:hover .progress-bar.w-85 {
-    width: 85%;
+  width: 85%;
 }
 
 .team-8:hover .progress-bar.w-90 {
-    width: 90%;
+  width: 90%;
 }
 
 .team-8:hover .progress-bar.w-95 {
-    width: 95%;
+  width: 95%;
 }
 
 .team-8:hover .progress-bar.w-100 {
-    width: 100%;
+  width: 100%;
 }
 
 .team-8 .team-social {
-    font-size: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  font-size: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .team-8 .team-social a {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    margin-right: 5px;
-    padding: 11px 0 10px 0;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 16px;
-    text-align: center;
-    color: #ffffff;
-    transition: all .3s;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  padding: 11px 0 10px 0;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+  transition: all 0.3s;
 }
 
 .team-8 .team-social a.social-tw {
-    background: #00acee;
+  background: #00acee;
 }
 
 .team-8 .team-social a.social-fb {
-    background: #3b5998;
+  background: #3b5998;
 }
 
 .team-8 .team-social a.social-li {
-    background: #0e76a8;
+  background: #0e76a8;
 }
 
 .team-8 .team-social a.social-in {
-    background: #3f729b;
+  background: #3f729b;
 }
 
 .team-8 .team-social a.social-yt {
-    background: #c4302b;
+  background: #c4302b;
 }
 
 .team-8 .team-social a:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .team-8 .team-social a:hover {
-    color: #ffffff;
-    background: #222222;
+  color: #ffffff;
+  background: #222222;
 }
-
-
 
 /**********************************/
 /********* Team #9 Style **********/
 /**********************************/
 .team-9 {
-    padding: 20px;
-    margin-bottom: 30px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
 }
 
 .team-9:hover {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 .team-9 .team-img {
-    position: relative;
-    font-size: 0;
-    text-align: center;
-    margin-bottom: 30px;
+  position: relative;
+  font-size: 0;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .team-9 .team-img img {
-    width: 100%;
-    height: auto;
-    border-radius: 100%;
+  width: 100%;
+  height: auto;
+  border-radius: 100%;
 }
 
 .team-9 .team-content {
-    text-align: center;
+  text-align: center;
 }
 
 .team-9 .team-content h2 {
-    font-size: 25px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    margin-bottom: 5px;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
 }
 
 .team-9 .team-content h3 {
-    font-size: 16px;
-    font-weight: 400;
-    margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 0;
 }
 
 .team-9 .team-overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    background: #ffffff;
-    border-radius: 5px;
-    transform: rotateY(180deg);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background: #ffffff;
+  border-radius: 5px;
+  transform: rotateY(180deg);
 }
 
 .team-9 .team-overlay p {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 22px;
-    text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
 }
 
 .team-9 .team-social {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0;
 }
 
 .team-9 .team-social a {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    margin-right: 5px;
-    padding: 11px 0 10px 0;
-    font-size: 16px;
-    line-height: 16px;
-    text-align: center;
-    color: #ffffff;
-    border-radius: 100%;
-    transition: all .3s;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  padding: 11px 0 10px 0;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 100%;
+  transition: all 0.3s;
 }
 
 .team-9 .team-social a.social-tw {
-    background: #00acee;
+  background: #00acee;
 }
 
 .team-9 .team-social a.social-fb {
-    background: #3b5998;
+  background: #3b5998;
 }
 
 .team-9 .team-social a.social-li {
-    background: #0e76a8;
+  background: #0e76a8;
 }
 
 .team-9 .team-social a.social-in {
-    background: #3f729b;
+  background: #3f729b;
 }
 
 .team-9 .team-social a.social-yt {
-    background: #c4302b;
+  background: #c4302b;
 }
 
 .team-9 .team-social a:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .team-9 .team-social a:hover {
-    background: #222222;
+  background: #222222;
 }
-
-
 
 /**********************************/
 /********* Team #10 Style *********/
 /**********************************/
 .team-10 {
-    text-align: center;
-    margin-bottom: 30px;
-    border-radius: 5px;
+  text-align: center;
+  margin-bottom: 30px;
+  border-radius: 5px;
 }
 
 .team-10 .team-img {
-    border-radius: 5px;
-    overflow: hidden;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .team-10 .team-img img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
 }
 
 .team-10 .team-content {
-    position: relative;
-    width: 90%;
-    padding: 20px;
-    margin: -60px auto 0 auto;
-    background: #ffffff;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    border-radius: 5px;
+  position: relative;
+  width: 90%;
+  padding: 20px;
+  margin: -60px auto 0 auto;
+  background: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  border-radius: 5px;
 }
 
 .team-10:hover .team-content {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 .team-10 .team-overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    background: #ffffff;
-    border-radius: 5px;
-    transform: rotateY(180deg);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background: #ffffff;
+  border-radius: 5px;
+  transform: rotateY(180deg);
 }
 
 .team-10 .team-content h2 {
-    font-size: 25px;
-    font-weight: 400;
-    letter-spacing: 2px;
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 2px;
 }
 
 .team-10 .team-content h3 {
-    font-size: 16px;
-    font-weight: 300;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 .team-10 .team-content p {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 22px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
 }
 
 .team-10 .team-social {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0;
 }
 
 .team-10 .team-social a {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    margin-right: 5px;
-    padding: 11px 0 10px 0;
-    font-size: 16px;
-    line-height: 16px;
-    text-align: center;
-    color: #ffffff;
-    border-radius: 5px;
-    transition: all .3s;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  padding: 11px 0 10px 0;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 5px;
+  transition: all 0.3s;
 }
 
 .team-10 .team-social a.social-tw {
-    background: #00acee;
+  background: #00acee;
 }
 
 .team-10 .team-social a.social-fb {
-    background: #3b5998;
+  background: #3b5998;
 }
 
 .team-10 .team-social a.social-li {
-    background: #0e76a8;
+  background: #0e76a8;
 }
 
 .team-10 .team-social a.social-in {
-    background: #3f729b;
+  background: #3f729b;
 }
 
 .team-10 .team-social a.social-yt {
-    background: #c4302b;
+  background: #c4302b;
 }
 
 .team-10 .team-social a:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .team-10 .team-social a:hover {
-    background: #222222;
+  background: #222222;
 }
 /*Round the input box in modal-body*/
 .modal-body input {
-    border-radius: 5px;
+  border-radius: 5px;
 }
 
 /* Center h5 in modal header*/
 .modal-header h5 {
-    margin: auto;
+  margin: auto;
 }
 
 /* Center button in modal footer */
 .modal-footer {
-    justify-content: center;
+  justify-content: center;
 }

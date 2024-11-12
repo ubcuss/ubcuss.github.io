@@ -147,7 +147,7 @@
                         <div class="carousel-caption text-start flex flex-col justify-center items-center h-full">
                             <h1 class="text-4xl mb-1 font-bold mt-5">Our Events</h1>
                             <p class="mt-1">We regularly hold events related to Data Science, Statistics and Machine Learning.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#events">Learn more</a></p>
+                            <p><a class="btn btn-lg btn-primary" href="#pastevents">Learn more</a></p>
                         </div>
                     </div>
                 </div>
@@ -214,38 +214,38 @@
 
             <!-- Three columns of text below the carousel -->
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-4 flex flex-col justify-center items-center">
                     <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
                         xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
                         preserveAspectRatio="xMidYMid slice" focusable="false">
                         <image href="images/g1.png" height="140" width="140" />
                     </svg>
 
-                    <h2 class="fw-normal">Workshops</h2>
-                    <p>Opportunities to know and discover different aspects of statistics and data science.</p>
+                    <div>
+                        <h2 class="font-bold">Workshops</h2>
+                        <p>Opportunities to know and discover different aspects of statistics and data science.</p>
+                    </div>
                     <!-- <p><a class="btn btn-secondary" href="#">details </a></p> -->
                 </div><!-- /.col-lg-4 -->
-                <div class="col-lg-4">
+                <div class="col-lg-4 flex flex-col justify-center items-center">
                     <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
                         xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
                         preserveAspectRatio="xMidYMid slice" focusable="false">
                         <image href="images/g2.png" height="140" width="140" />
                     </svg>
 
-                    <h2 class="fw-normal">Review Sessions</h2>
-                    <p>Get through all the tough statistics courses, tackle all the unknown, and solve all your academic
-                        wise concerns
-                        with experienced students.</p>
+                    <h2 class="font-bold">Review Sessions</h2>
+                    <p>Tackle all the tough statistics courses and solve your academic concerns with experienced students.</p>
                     <!-- <p><a class="btn btn-secondary" href="#">details</a></p> -->
                 </div><!-- /.col-lg-4 -->
-                <div class="col-lg-4">
+                <div class="col-lg-4 flex flex-col justify-center items-center">
                     <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
                         xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
                         preserveAspectRatio="xMidYMid slice" focusable="false">
                         <image href="images/g3.png" height="140" width="140" />
                     </svg>
 
-                    <h2 class="fw-normal">Networking</h2>
+                    <h2 class="font-bold">Networking</h2>
                     <p>Establish unique professional and industry related connections with constructive advice.</p>
                     <!-- <p><a class="btn btn-secondary" href="#">details</a></p> -->
                 </div><!-- /.col-lg-4 -->
@@ -790,11 +790,13 @@
         <!-- FOOTER -->
         <footer class="container">
             <p class="float-end"><a href="#">Back to top</a></p>
-            <p>&copy; USS 2022 &middot; <a href="https://www.ubc.ca" target="_blank">UBC</a> &middot; <a
+            <p>&copy; USS <span id="currentYear"></span> &middot; <a href="https://www.ubc.ca" target="_blank">UBC</a> &middot; <a
                     href="https://www.stat.ubc.ca" target="_blank">Stats</a></p>
         </footer>
 
         <script>
+            document.getElementById("currentYear").textContent = new Date().getFullYear();
+
             $(document).ready(function () {
                 $("#myModal").modal('show');
             });
